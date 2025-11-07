@@ -27,5 +27,13 @@ pipeline {
                 echo "Hello World from ${params.ENV} environment!"
             }
         }
+        stage("Dummy"){
+            steps{
+                script{
+                    def naa="Murali"
+                    echo "Heelo ${naa}"
+                }
+            }
+        }
     }
 }
