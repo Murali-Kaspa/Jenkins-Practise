@@ -1,3 +1,4 @@
+@Library('shared-libary') _
 pipeline {
     agent {
         // Use the built-in Jenkins node (master)
@@ -25,6 +26,8 @@ pipeline {
         stage('Printing Message') {
             steps {
                 echo "Hello World from ${params.ENV} environment!"
+                echo "Shhared Library"
+                sample()
             }
         }
         stage("Dummy"){
