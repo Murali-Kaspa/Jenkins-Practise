@@ -8,6 +8,7 @@ sudo yum install jenkins -y
 sudo systemctl start jenkins
 sudo systemctl enable Jenkins
 sudo usermod -aG jenkins $USER
-
+echo "Jenkins Installed Successfully"
 password=$(sudo cat /var/lib/jenkins/secrets/initialAdminPassword)
 echo "Jenkins initial admin password is: ${password}"
+
