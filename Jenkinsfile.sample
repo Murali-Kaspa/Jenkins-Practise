@@ -32,7 +32,7 @@ pipeline {
             steps{
                 script{
                     def naa="Murali"
-                    echo "Heelo ${naa}"
+                    echo "Heelo ${naa}" >> sample.txt
                     mkdir sample
                 }
             }
