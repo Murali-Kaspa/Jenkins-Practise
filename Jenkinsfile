@@ -1,4 +1,3 @@
-@Library('shared-libary') _
 pipeline {
     agent {
         // Use the built-in Jenkins node (master)
