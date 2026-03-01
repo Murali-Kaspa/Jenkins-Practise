@@ -26,8 +26,7 @@ pipeline {
         stage('Printing Message') {
             steps {
                 echo "Hello World from ${params.ENV} environment!"
-                echo "Shhared Library"
-                sample()
+                echo "Testing from ${BRANCH_NAME}"
             }
         }
         stage("Dummy"){
