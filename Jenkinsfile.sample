@@ -33,6 +33,7 @@ pipeline {
                 script{
                     def naa="Murali"
                     echo "Heelo ${naa}"
+                    mkdir sample
                 }
             }
         }
